@@ -35,45 +35,14 @@
           Fearless
         </a>
       </div>
-      <div class="collapse navbar-collapse">
+      <div class="single-page-nav collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right navbar-uppercase">
-          <li>
-            <a href="#" target="_blank">Software</a>
-          </li>
-          <li>
-            <a href="#" target="_blank">Capacitación</a>
-          </li>
-          <li>
-            <a href="#" target="_blank">Asesoramiento</a>
-          </li>
-          <li>
-            <a href="#" target="_blank">Research</a>
-          </li>
-          <li>
-            <a href="#" target="_blank">Blog</a>
-          </li>
-          <li>
-            <a href="#" target="_blank">Contacto</a>
-          </li>
-          <!-- <li class="dropdown">
-            <a href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-share-alt"></i> Share
-            </a>
-            <ul class="dropdown-menu dropdown-danger">
-              <li>
-                <a href="#"><i class="fa fa-facebook-square"></i> Facebook</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="btn btn-danger btn-fill">Free Download</a>
-          </li> -->
+          <li><a href="#software">Software</a></li>
+          <li><a href="#asesoramiento">Asesoramiento</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#capacitacion">Capacitación</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -105,7 +74,7 @@
   </div>
 
 
-  <div class="section">
+  <div id="software" class="section">
     <div class="container">
       <div class="row">
         <div class="title-area">
@@ -160,7 +129,7 @@
   </div>
 
 
-  <div class="section section-our-team-freebie">
+  <div id="asesoramiento" class="section section-our-team-freebie">
     <div class="parallax filter filter-color-black">
       <div class="image" style="background-image:url('./assets/img/header-2.jpeg')">
       </div>
@@ -238,7 +207,7 @@
   </div>
 
 
-  <div class="section section-our-clients-freebie">
+  <div id="research" class="section section-our-clients-freebie">
     <div class="container">
       <div class="title-area">
         <h5 class="subtitle text-gray">Here are some</h5>
@@ -295,7 +264,7 @@
   </div>
 
 
-  <div class="section section-small section-get-started">
+  <div id="contacto" class="section section-small section-get-started">
     <div class="parallax filter">
       <div class="image" style="background-image: url('./assets/img/office-1.jpeg')">
       </div>
@@ -315,7 +284,7 @@
   </div>
 
 
-  <div class="section">
+  <div id="capacitacion" class="section">
     <div class="container">
       <div class="row">
         <div class="title-area">
@@ -369,18 +338,25 @@
             <nav>
               <ul>
                 <li>
-                  <a href="#">Home</a></li>
-                <li>
-                  <a href="#">Find offers</a>
+                  <a href="#">Home</a>
                 </li>
                 <li>
-                  <a href="#">Discover Projects</a>
+                  <a href="#">Software</a>
                 </li>
                 <li>
-                  <a href="#">Our Portfolio</a>
+                  <a href="#">Asesoramiento</a>
                 </li>
                 <li>
-                  <a href="#">About Us</a>
+                  <a href="#">Research</a>
+                </li>
+                <li>
+                  <a href="#">Contacto</a>
+                </li>
+                <li>
+                  <a href="#">Capacitación</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
                 </li>
               </ul>
             </nav>
@@ -484,5 +460,36 @@
 
 <!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
 <script type="text/javascript" src="./assets/js/gaia.js"></script>
+
+<script type="text/javascript" src="assets/js/jquery.singlePageNav.min.js"></script>
+
+<script type="text/javascript">
+    // Prevent console.log from generating errors in IE for the purposes of the demo
+    if (!window.console) console = { log: function () { } };
+    (function() {
+        console.log('loading ..');
+        // The actual plugin
+        $('.single-page-nav').singlePageNav({
+            offset: $('.single-page-nav').outerHeight(),
+            filter: ':not(.external)',
+            updateHash: true,
+            beforeStart: function() {
+                console.log('begin scrolling');
+            },
+            onComplete: function() {
+                console.log('done scrolling');
+            }
+        });
+	
+	document.querySelectorAll('ul.navbar-nav li')
+	.forEach(function(li) {
+  		li.addEventListener('click', function(){
+    			window.setTimeout(function () {
+      				document.querySelector('html').classList.remove('nav-open')
+    			}, 40);
+	  	})
+	});
+    })();
+</script>
 
 </html>
