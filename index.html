@@ -58,7 +58,7 @@
         <div class="content">
           <div class="title-area">
             <h1 class="title-modern">Fearless</h1>
-            <h3>Capacitación Bursatil</h2>
+            <h3>Trading Without Fear</h2>
               <div class="separator line-separator">♦</div>
           </div>
           <!-- 
@@ -98,7 +98,7 @@
         <div class="col-md-3">
           <div class="info-icon">
             <div class="icon text-danger">
-              <i class="pe-7s-note2"></i>
+              <i class="pe-7s-way"></i>
             </div>
             <h3>Ninja Trader</h3>
             <p class="description">We create a persona regarding the multiple wardrobe accessories that we provide..</p>
@@ -107,7 +107,7 @@
         <div class="col-md-3">
           <div class="info-icon">
             <div class="icon text-danger">
-              <i class="pe-7s-piggy"></i>
+              <i class="pe-7s-vector"></i>
             </div>
             <h3>Esignal</h3>
             <p class="description">We like to present the world with our work, so we make sure we spread the word
@@ -441,7 +441,8 @@
       <hr>
       <div class="copyright">
         ©
-        <script> document.write(new Date().getFullYear()) </script> Fearless Capital, made with love by <a href="https://salva.io/" target="_blank">salva.io</a>
+        <script> document.write(new Date().getFullYear()) </script> Fearless Capital, made with love by <a
+          href="https://salva.io/" target="_blank">salva.io</a>
       </div>
     </div>
   </footer>
@@ -464,32 +465,32 @@
 <script type="text/javascript" src="./assets/js/jquery.singlePageNav.min.js"></script>
 
 <script type="text/javascript">
-    // Prevent console.log from generating errors in IE for the purposes of the demo
-    if (!window.console) console = { log: function () { } };
-    (function() {
-        console.log('loading ..');
-        // The actual plugin
-        $('.single-page-nav').singlePageNav({
-            offset: $('.single-page-nav').outerHeight(),
-            filter: ':not(.external)',
-            updateHash: true,
-            beforeStart: function() {
-                console.log('begin scrolling');
-            },
-            onComplete: function() {
-                console.log('done scrolling');
-            }
-        });
-	
-	document.querySelectorAll('ul.navbar-nav li')
-	.forEach(function(li) {
-  		li.addEventListener('click', function(){
-    			window.setTimeout(function () {
-      				document.querySelector('html').classList.remove('nav-open')
-    			}, 40);
-	  	})
-	});
-    })();
+  // Prevent console.log from generating errors in IE for the purposes of the demo
+  if (!window.console) console = { log: function () { } };
+  (function () {
+    console.log('loading ..');
+    // The actual plugin
+    $('.single-page-nav').singlePageNav({
+      offset: $('.single-page-nav').outerHeight(),
+      filter: ':not(.external)',
+      updateHash: true,
+      beforeStart: function () {
+        console.log('begin scrolling');
+      },
+      onComplete: function () {
+        console.log('done scrolling');
+      }
+    });
+
+    document.querySelectorAll('ul.navbar-nav li')
+      .forEach(function (li) {
+        li.addEventListener('click', function () {
+          window.setTimeout(function () {
+            document.querySelector('html').classList.remove('nav-open')
+          }, 40);
+        })
+      });
+  })();
 </script>
 
 </html>
