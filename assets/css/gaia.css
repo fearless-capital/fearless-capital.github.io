@@ -1074,7 +1074,7 @@ a,
 .filter {
   position: relative;
   height: 100%;
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
 }
 .filter:before {
   position: absolute;
