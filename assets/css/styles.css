@@ -66,3 +66,7 @@
 table.table tr td {
   border: 0;
 }
+/* #asesoramiento > footer > div > div.row > div:nth-child(3) > div > h5 */
+.footer h5.title {
+  text-align: center;
+}
