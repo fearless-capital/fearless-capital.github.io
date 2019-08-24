@@ -85,12 +85,13 @@ const Main = {
     const href = window.location.href.split("#");
     const price = prices[href[1]];
 
-    // const content = document.getElementById("content");
+    const validSections = Object.keys(prices);
 
-    console.log(price, href[1]);
+    if (!href[1] || !validSections.includes(href[1])) {
+      window.location = "/";
+    }
 
     document.getElementById("title").innerHTML = price.title;
-    // document.getElementById("description").innerHTML = price.price;
     const itemContainer = document.getElementById("content");
 
     price.items.map(item => {
