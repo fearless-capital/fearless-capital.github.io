@@ -25,6 +25,58 @@ const prices = {
       "Acceso archivo capacitacion exclusiva",
       "2 meses gratis!"
     ]
+  },
+  basico: {
+    title: "Basico",
+    price: 300,
+    items: ["Acceso a seminario de opciones.", "Soporte por email"]
+  },
+  profesional: {
+    title: "Profesional",
+    price: 700,
+    items: [
+      "Acceso a seminario de opciones.",
+      "Acceso a seminario de opciones avanzado.",
+      "Soporte por email",
+      "Acceso a proximos webinars de opciones."
+    ]
+  },
+  avanzado: {
+    title: "Avanzado",
+    price: 2000,
+    items: [
+      "Acceso a seminario de opciones.",
+      "Acceso a seminario de opciones avanzado.",
+      "Soporte por email",
+      "Acceso a proximos webinars de opciones."
+    ]
+  },
+
+  analista: {
+    title: "Analista",
+    price: 300,
+    items: [
+      "Acceso a seminario de analisis tecnico.",
+      "Acceso a proxima edicion en vivo."
+    ]
+  },
+  analista_avanzado: {
+    title: "Analista Avanzado",
+    price: 700,
+    items: [
+      "Acceso a seminario de analisis tecnico.",
+      "Acceso a seminario de analisis tecnico avanzado.",
+      "Soporte por email",
+      "Acceso a proximos webinars de opciones."
+    ]
+  },
+  analista_profesional: {
+    title: "Analista Profesional",
+    price: 2000,
+    items: [
+      "Incluye todo el material del nivel avanzado.",
+      "Acceso a seminario de manejo del dinero."
+    ]
   }
 };
 

@@ -11,6 +11,7 @@
 
   <link href="./assets/css/bootstrap.css" rel="stylesheet" />
   <link href="./assets/css/landing-page.css" rel="stylesheet" />
+  <!-- <link href="./assets/css/gaia.css" rel="stylesheet" /> -->
 
   <!--     Fonts and icons     -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -70,12 +71,12 @@
   </nav>
 
   <div class="wrapper">
-    <div class="parallax filter-gradient blue" data-color="blue">
-      <div class="image" style="background-image: url('././assets/img/quantitative-trading-featured-image-main.jpg')">
-      </div>
-      <!-- <div class="parallax-background">
-        <img class="parallax-background-image" src="./assets/img/quantitative-trading-featured-image-main.jpg">
+    <div class="parallax filter-gradient blue" data-color="blue" style="max-height: 100vh;">
+      <!-- <div class="image" style="background-image: url('./assets/img/quantitative-trading-featured-image-main.jpg')">
       </div> -->
+      <div class="parallax-background">
+        <img class="parallax-background-image" src="./assets/img/quantitative-trading-featured-image-main.jpg">
+      </div>
       <div class="container">
         <div class="row">
           <!-- <div class="col-md-5 hidden-xs">
@@ -83,10 +84,16 @@
               <img class="phone" src="assets/img/template/iphone3.png" style="margin-top: 20px" />
             </div>
           </div> -->
-          <div class="col-md-6 col-md-offset-1">
+          <div class="col-md-12" style="
+              height: 100vh;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              color: white;
+              text-align: center;
+          ">
+            <h2 id="title"></h2>
             <div class="description">
-              <h2 id="title"></h2>
-              <br>
               <h5>descripcion del curso</h5>
             </div>
             <!-- <div class="buttons">
